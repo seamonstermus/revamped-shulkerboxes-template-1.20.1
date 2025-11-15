@@ -3,21 +3,23 @@
 	"id": "revamped-shulkerboxes",
 	"version": "${version}",
 	"name": "Revamped Shulkerboxes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This Mod turn shulker boxes into literal backpacks kind of like sophisticated backpacks but nerfed and vanilla friendly.",
 	"authors": [
-		"Me!"
+		"SeaMonsterMus"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/seamonstermus/revamped-shulkerboxes-template-1.20.1"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/revamped-shulkerboxes/icon.png",
+	"license": "MIT",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxes"
 		],
+        "client": [
+            "net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxesClient"
+        ],
 		"fabric-datagen": [
 			"net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxesDataGenerator"
 		]
@@ -28,7 +30,7 @@
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.20.1",
-		"java": ">=17",
+		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
