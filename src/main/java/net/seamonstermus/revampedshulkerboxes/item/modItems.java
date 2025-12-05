@@ -11,10 +11,10 @@ import net.minecraft.util.Identifier;
 import net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxes;
 
 public class modItems {
-    public static final Item GOLD_SHULKER_BOX = registerItem("gold_shulker_box", new Item(new FabricItemSettings()));
+    public static final Item RestockUpgrade = registerItem("restockupgrade", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(GOLD_SHULKER_BOX);
+        entries.add(RestockUpgrade);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(RevampedShulkerboxes.MOD_ID, name), item);
