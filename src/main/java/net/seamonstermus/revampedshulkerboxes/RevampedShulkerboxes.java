@@ -2,6 +2,7 @@ package net.seamonstermus.revampedshulkerboxes;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.seamonstermus.revampedshulkerboxes.block.ModBlocks;
 import net.seamonstermus.revampedshulkerboxes.item.modItemGroups;
 import net.seamonstermus.revampedshulkerboxes.item.modItems;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class RevampedShulkerboxes implements ModInitializer {
 	@Override
 	public void onInitialize() {
         modItemGroups.registerItemGroups();
+        ModBlocks.registerModBlocks();
         modItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}
