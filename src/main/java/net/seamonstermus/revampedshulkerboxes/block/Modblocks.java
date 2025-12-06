@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 import net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxes;
 
 public class Modblocks {
-    public static final Block Gold_Shulker_Box = new GoldShulkerBoxBlock(DyeColor.PURPLE, null);
+    public static final Block Gold_Shulker_Box = new GoldShulkerBoxBlock()
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(RevampedShulkerboxes.MOD_ID, name), block);
