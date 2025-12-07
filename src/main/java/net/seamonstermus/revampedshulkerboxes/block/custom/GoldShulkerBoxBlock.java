@@ -1,4 +1,4 @@
-package net.seamonstermus.revampedshulkerboxes.block;
+package net.seamonstermus.revampedshulkerboxes.block.custom;
 
 import com.google.common.collect.Maps;
 import net.minecraft.block.*;
@@ -38,7 +38,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.seamonstermus.revampedshulkerboxes.block.entity.GoldShulkerBoxBlockEntity;
+import net.seamonstermus.revampedshulkerboxes.block.custom.entity.GoldShulkerBoxBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;

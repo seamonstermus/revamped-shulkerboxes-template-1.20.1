@@ -3,6 +3,7 @@ package net.seamonstermus.revampedshulkerboxes.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -12,10 +13,10 @@ import net.seamonstermus.revampedshulkerboxes.RevampedShulkerboxes;
 
 public class modItems {
     public static final Item RestockUpgrade = registerItem("restockupgrade", new Item(new FabricItemSettings()));
-
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RestockUpgrade);
     }
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(RevampedShulkerboxes.MOD_ID, name), item);
     }

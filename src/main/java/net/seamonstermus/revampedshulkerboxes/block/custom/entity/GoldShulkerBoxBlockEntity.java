@@ -1,4 +1,4 @@
-package net.seamonstermus.revampedshulkerboxes.block.entity;
+package net.seamonstermus.revampedshulkerboxes.block.custom.entity;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
